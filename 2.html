@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings and string methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi blanditiis unde nemo eos, modi necessitatibus aut quae dolorem ad nobis ipsum alias laudantium et, ducimus inventore totam pariatur. Sed, tenetur.</p>
+        <script>
+            let string="This is a string.";
+            let name="Abhik.";
+            let message=" I am learning Javascript";
+            let temp=`${name} is a nice person and he is learning programming`;
+            console.log(string+name+message);//concatenates the strings
+            console.log(temp);
+
+            var len=name.length;//used to find the length of the string
+            console.log(`The length of the\nstring is`+(len));
+
+
+            let myname=`My name is Abhik.`;
+            let newstring=`I will be learning MERN stack.`;
+            console.log(myname+newstring);
+            let msg=`${myname} ${newstring}`;
+            console.log(msg);
+            console.log(msg.length);
+
+            //escape sequence characters->suppose we have to add backtick in the string itself
+            let variable=`player\'s`;
+            console.log(variable);
+
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String functions in javascript</title>
+</head>
+<body>
+    <script>
+        let str=`we are learning string functions in java script`;
+        console.log(str);
+        //suppose we have to find the position of any letter using the index
+
+        //first occurence of the substring
+        let position=str.indexOf(`w`);
+        console.log(position);
+
+        //last occurence of the substring
+        position=str.lastIndexOf(`t`);
+        console.log(position);
+
+        //substring of the string
+        var substr=str.slice(0,6);
+        //prints upto index 5
+        console.log(substr);
+
+        //replace a substring
+        var replaced=str.replace(`we`,`I`);
+        console.log(str);
+        console.log(replaced);
+
+        //convert to upper case letters
+        console.log(str.toUpperCase());
+
+        //covert to lower case
+        console.log(str.toLowerCase()); 
+
+        //to trim a string->removes spaces in between the words
+        var newstring=`  hello    everyone  `
+        console.log(newstring);
+        console.log(newstring.trim());
+
+        //To find the character at a particular index
+        console.log(str.charAt(4));
+        console.log(str[5]);
+
+        //Indexing is same as C language
+    </script>
+    
+</body>
+</html>

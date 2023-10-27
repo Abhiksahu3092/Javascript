@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Listening to events</title>
+    
+</head>
+
+<body>
+    <!--browser events
+
+    click
+    context
+    mouse over/mouse out
+    mouse down/mouse up
+    mouse move
+
+    submit
+    focus
+
+    Dom content loaded
+
+    transitioned-->
+    <!--
+        Event and listening to events means knowing the reactions about user input and reacting accordingly
+    -->
+    <h1>This is a paragraph</h1>
+    <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam recusandae delectus repellendus, dolor quis fuga minus. Nihil, consequatur consectetur ratione sint sed eaque nobis nesciunt voluptas architecto error quam neque sequi magni, quia earum iusto odit obcaecati minima? Laboriosam delectus expedita saepe id quos ea quaerat nulla magni alias, recusandae quam voluptas veniam temporibus provident molestias natus et libero excepturi esse sunt. Debitis perferendis qui aperiam praesentium nulla similique perspiciatis facilis alias autem cupiditate commodi est eaque iure modi iste blanditiis, ipsam veniam maxime soluta repudiandae animi veritatis minus? Soluta sequi possimus iusto fugiat incidunt, quidem aperiam dolores nulla, distinctio quia quam ratione voluptas facilis.</p>
+    <button id="btn" class=" b" onclick="toggle()">Hide</button>
+
+
+    <!-- <style>
+        /* #btn{
+            padding: 20px;
+            background-color:green;
+            border: 4px solid black;
+            color: white;
+            font-weight:bold ;
+            border-radius: 20px;
+            cursor: pointer;
+        } */
+    </style> -->
+
+    <script>
+        let myarray=["hello","hai","how are you"].reverse();
+        
+        let btn=document.getElementById(`btn`);
+       function toggle(){
+        
+        if(para.style.display!=`none`){
+            para.style.display='none';
+            btn.innerHTML="Show";
+            myarray.map((e)=>{
+            // document.innerHTML+=`<button id="btn" class=" b" onclick="toggle()">${e}</button>`;
+            document.getElementById("btn")
+                .insertAdjacentHTML("afterend",
+`<h3>${e}</h3>`);
+        
+        }
+
+        )
+        }
+        else{
+            para.style.display='block';
+            btn.innerHTML="Hide";
+        }
+       }
+
+       //To use event listener
+       let p=document.getElementById(`para`);
+        p.addEventListener(`mouseover`,function run(){
+            //alert(`mouse inside`);
+            console.log(`mouse inside`);
+        });
+
+        p.addEventListener(`mouseout`,function run(){
+            //alert(`mouse outside`);
+            console.log(`mouse outside`);
+        });
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM(document object model)</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="listed" class="lists">
+            <li>Home</li>
+            <li>About</li>
+            <li>University</li>
+            <li>Admission</li>
+        </ul>
+    </div>
+    <div class="container">
+        This is another container
+    </div>
+    <script>
+        //It is model through which we can access the objects in in any html file
+        let main=document.getElementById('main');
+        console.log(main);
+
+        let listed=document.getElementById(`listed`);
+        console.log(listed);
+
+        let container=document.getElementsByClassName(`container`);
+        console.log(container);
+        //It will show in terms of an array in the console when we call getElementsByClassName        
+
+        let newcontainer=document.getElementsByClassName(`lists`);
+        console.log(newcontainer);
+
+        let selector=document.querySelector('.container>.lists>li');
+        //returns div with container as ID
+        console.log("selector returns",selector);
+
+        let sel=document.querySelector('#listed>li');
+        //returns div with main as class name
+        console.log("selector returns",sel);
+
+        // dot(.)->container ->dc
+
+    </script>
+    
+</body>
+</html>

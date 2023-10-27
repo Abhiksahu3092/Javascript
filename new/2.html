@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays</title>
+</head>
+<body>
+    <script>
+        let a=[1,3,6,2];
+        let d=[5,52,449];
+        console.log(typeof a);
+        let b=a.toString();//converts an array to string
+        console.log(a);
+        console.log(b);
+        // Note: In javascript, an array is an object
+
+        let c=a.join("-")//join is used to join the elements of the array with some separator
+        console.log(c);
+
+        //pop operation
+        console.log(a.pop());//prints popped out element
+        console.log(a);
+
+        //push operation
+        console.log(a.push(2));//returns length of the new array
+        console.log(a);
+
+        //shift operation - removes first element from  the array
+        console.log(a.shift());
+        console.log(a);
+
+        //unshift operation - moves a new element in the first position in the array
+        console.log(a.unshift(1));//returns size of the array
+        console.log(a);
+
+        //delete operation - deletes an element from the array
+        delete a[0];
+        console.log(a);//here length of the array will not be affected
+
+        //concat operation
+        let newarr=a.concat(d);
+        console.log(newarr);
+
+        //sort
+        let arr=d.sort();
+        console.log(d);//sort alphabetically
+
+        //but there is way of sorting the elements in actual numerical value
+        const compare=(a,b)=>{
+            return a-b;//for descending b-a
+        }
+
+        let new_arr=d.sort(compare);
+        console.log(new_arr);
+
+        //reverse 
+        let new_d=d.reverse();
+        console.log(new_d);
+
+
+        //splice(a,b,c,d) -> a is the index from which splice should be started, b is the no. of elements to be deleted and c and d are the elements to be placed in place of those deleted elements
+        console.log(d.splice(0,1,3,4));//returns deleted elements
+        console.log(d);
+        
+    </script>
+</body>
+</html>

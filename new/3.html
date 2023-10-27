@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>looping in arrays</title>
+</head>
+<body>
+    <script>
+        //for each loops
+        let numbers=[4,12,0,5,34];
+        numbers.forEach(element => {
+            console.log(element);
+        });
+
+        //array.from
+        let name=`abhik`;
+        let new_name=Array.from(name);
+        console.log(new_name);
+
+        //for..of
+        for(let i of numbers){
+            console.log(i);
+        }
+
+        //for..in
+        for(let j in numbers){
+            //console.log(j);//provides the keys in the array i.e in this case are the indices of the array
+            console.log(numbers[j]);
+        }
+    </script>
+</body>
+</html>

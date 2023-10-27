@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in javascript</title>
+</head>
+<body>
+    <script>
+        console.log(`This is a tutorial`);
+        let i=0;
+        for(i=0;i<3;i++){
+            console.log(i);
+        }
+        //conventional for loop
+        let friend=[`abhik`,`anirudh`,`cheeku`,`abinas`];
+        for(let i=0;i<friend.length;i++){
+            console.log(`Hello ${friend[i]}`);
+        }
+
+        //alternate method
+        friend.forEach(function f(element){
+            console.log(`hello `+element+` to modern javascript`);
+        });
+
+        //for of loop
+        for(element of friend){
+            console.log(`hello `+element+` to modern javascript`);
+        }
+
+        //for in loop
+        let employee={
+            name:`abhik`,
+            salary:300,
+        }
+        for(key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        //while loop
+        let j=0;
+        while(j<4){
+            console.log(`the value if ${j} is less than 4`);
+            j++
+        }
+
+        //do while loop
+        let n=34;
+        do{
+            console.log(`the value if ${n} is less than 45`);
+            n++
+        }while(n<4)
+    </script>
+</body>
+</html>

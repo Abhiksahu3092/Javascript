@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, If-else Conditionals & Switch Case in JavaScript </title>
+</head>
+<body>
+    <script>
+        //use of let to define variables 
+        let a=`rapid`;//here is global variable
+        {
+            let a=`rapidfire`;//here a is a local variable
+            console.log(a);
+        }
+        console.log(a);
+
+        //use of constants-constants cannot be ever changed
+        const b=`this cannot be changed`;
+        console.log(b);
+
+
+        //conditional statements-
+        //if else statements
+        let age=12;
+        if(age>18){
+            console.log(`you can apply for driving license`);
+        }
+        else{
+            console.log(`you cannot apply for driving license`);
+        }
+        //similarly we can apply for elseif
+        
+        //switch case statements
+        var phones=`abhik`;
+        switch (phones) {
+            case `abhik`:
+                console.log(`true`);
+                break;
+        
+            default:
+                console.log(`false`);
+                break;
+        }
+    </script>
+</body>
+</html>

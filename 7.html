@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert,confirm and prompt</title>
+</head>
+<body>
+    <script>
+        //alert in in-browser javascript - does not return anything
+        let a=alert(`This is a my website`);
+        console.log(a);
+        //prompt
+        let name=prompt(`what is your name ?`);
+        console.log(name);
+        //confirm
+        let deletepost=confirm(`Do you really want to delete it ?`);
+        if(deletepost){
+        console.log(`your post have been deleted`);
+        }
+        else{
+            console.log(`your post is not deleted`);
+        }
+    </script>
+    
+</body>
+</html>
