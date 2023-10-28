@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>console object in javascript</title>
+</head>
+<body>
+    <script>
+        console.error("This is an error");
+
+        //Other different methods in console object
+        /*
+        1.assert()->used to assert a statement
+        2.clear()->clears the console
+        3.log()->outputs a message to the console
+        4.table()->outputs a tablular data
+        5.warn()->used for warnings
+        6.error()->used for error
+        7.info()->used for special information*/
+
+        console.assert(55<5);
+
+        console.clear();
+
+        let obj={
+            a:1,
+            b:5,
+            c:10,
+            d:23,
+        }
+
+        console.table(obj);
+
+        console.warn("don't drink alcohol");
+
+        console.info("check the notice");
+
+
+        console.log(console);
+
+
+        console.time("for");
+        for(let i=0;i<1000;i++){
+        }
+        console.timeEnd("for");
+    </script>
+</body>
+</html>
