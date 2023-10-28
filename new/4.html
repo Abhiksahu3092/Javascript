@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maps, filter and reduce</title>
+</head>
+<body>
+    <script>
+        //map -> creates an array by performing some operations on each array elements
+
+        let arr=[5,3,8,4];
+        arr.map((v,i,a)=>{
+            console.log(v,i,a);
+        });
+
+        let arr2=[5,0,4,3,1];
+        let new_arr=arr.map(num=>{
+            return num+1;
+        });
+
+        console.log(new_arr);
+
+        //filters the value of array which passes the test
+        let no=[5,9,4,0,1];
+        let new_no=no.filter((v,i,a)=>{
+            return v<=5
+        });
+
+        console.log(new_no);
+
+        //array reduce method
+        let arr3=no.reduce((h1,h2)=>{
+            return h1+h2;
+        });
+        console.log(arr3);
+    </script>
+</body>
+</html>
