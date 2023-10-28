@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>excersise 1</title>
+</head>
+<body>
+    <script>
+        /*write a program to generate a random number and store it in a variable. The program then takes an input from user to tell whether the guess was correct, greater or lower than the original number.
+        100-(no. of guesses) is the score of the user. The program is expected to terminate once the number is guessed. Number should be in between 1 and 100.*/
+
+        let ans=Math.floor((Math.random()*50)+1);
+        let guess;
+        let count=0;
+        do{
+            guess=prompt("Enter any number");
+            if(guess==ans){
+                console.log("your guess is correct. Your score is "+(100-count));
+                break;
+            }
+            else if(guess>ans){
+                console.log("Correct number is less than your guess. Try again");
+                count++;
+            }
+            else{
+                console.log("Correct number is greater than your guess. Try again");
+                count++;
+            }
+        }while(count<100);
+    </script>
+</body>
+</html>
