@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+</head>
+<body>
+    <div>
+        <h2>This is dom manipulation</h2>
+        <span>sibling</span>
+    </div>
+    <script>
+        // Children - direct as well as deeply nested elements of an element are called its children
+        console.log(document.body.firstChild);
+        console.log(document.body.lastChild);
+        console.log(document.body.childNodes);
+        let arr=Array.from(document.body.childNodes);
+        console.log(arr);
+    </script>
+</body>
+</html>
