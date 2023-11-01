@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parents and siblings in DOM</title>
+</head>
+<body><div><p>first</p><p>second</p></div></body>
+
+<script>
+    console.log(document.body.parentNode);
+    console.log(document.body.parentElement);
+
+    let a=document.body.firstChild;
+    console.log(a.parentNode);//returns parent node even if its an element
+    console.log(a.parentElement);//returns only parent element only
+    console.log(document.documentElement.parentElement);
+    console.log(document.documentElement.parentNode);
+
+    console.log(a.firstChild.nextSibling);//It follows a pattern of binary tree for this process.
+</script>
+</html>
