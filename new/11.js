@@ -8,3 +8,6 @@ card_text[2].style.color="purple";
 /*
 similarly we can use queryselector
 getquerySelector.(".card-text")*/
+
+let nav_bar=document.getElementsByClassName("navbar-brand");
+nav_bar[0].style.color="red";
