@@ -3,7 +3,7 @@ let n=arr.length;
 let p=true;
 while(p){
     let uip=prompt("enter your choice");
-    let cip=arr[Math.floor(Math.random()*n)]//This function creates random answers from the system
+    let cip=arr[Math.floor(Math.random()*n)]//This function chooses random elements from the given array
     if(uip==cip){
         alert("tie. "+cip+" was the choice from the system");
     }
