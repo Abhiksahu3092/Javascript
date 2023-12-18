@@ -5,7 +5,7 @@ function greet(name,greettext){
 }
 
 function sum(a,b,c){
-    let d=a**b
+    let d=a**b;
     //to represent power of any number we have to use **
     return d;
 }
@@ -26,6 +26,8 @@ let val=sum(a,b,c);
 console.log(val);
 
 //another way of defining a function. This is also called as arrow function
+//very important in the context of javascript -> arrow functions
+//mostly arrow functions are used in javascript as they are more popular than traditional functions
 const sum2=(a,b)=>{
     return a+b;
 }
