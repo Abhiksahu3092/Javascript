@@ -7,4 +7,5 @@ console.log(a);
 let b=document.createElement('div');
 b.innerHTML='<p>This is created element</p>';
 
-a.appendChild(b);
+//a.appendChild(b); inserts at the end of the div
+//a.prepend(b);
