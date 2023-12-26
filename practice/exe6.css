@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color:#61dafb;
+    font-family: 'Arial', sans-serif;
+  }
+
+  #clock {
+    width: 200px;
+    height: 200px;
+    border: 10px solid #61dafb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    position: relative;
+  }
+
+  #hour,
+  #minute,
+  #second {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #61dafb;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: transform 0.5s cubic-bezier(0.4, 2.2, 0.2, 1);
+  }
+
+  #minute {
+    height: 1.5px;
+    background-color: #61dafb;
+  }
+
+  #second {
+    height: 1px;
+    background-color: red;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(90deg);
+    }
+    to {
+      transform: rotate(450deg);
+    }
+  }
