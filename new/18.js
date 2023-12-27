@@ -6,13 +6,11 @@ const students=[
 ]
 
 const enrollstudent=(student,callback)=>{
-    const fn=()=>{
+    setTimeout(function(){
         students.push(student);
         console.log("Student enrolled");
         callback();
-    }
-
-    setTimeout(fn,1000);
+    },1000);
 }
 
 const getstudents=()=>{
