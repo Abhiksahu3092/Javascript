@@ -1,9 +1,5 @@
-/*First we are creating the object*/
-const students=[
-    {name:"Abhik" , roll:"1"},
-    {name:"Abhimanyu" , roll:"2"},
-    {name:"Abinas" , roll:"4"}
-]
+/*First we are creating an array*/
+let students=["Abhik","Abimanyu","Abinas"]
 
 const enrollstudent=(student,callback)=>{
     setTimeout(function(){
@@ -17,13 +13,13 @@ const getstudents=()=>{
     let str='';
     setTimeout(function(){
         students.forEach(function(student){
-            str+=`<li>${student.name}</li>`
+            str+=`<li>${student}</li>`
         });
         document.getElementById('students').innerHTML=str;
         console.log('student fetched');
     },3000)
 }
 
-const new_student={name:"Achut" , roll:"5"}
+let new_student="Achut"
 
 enrollstudent(new_student,getstudents);
