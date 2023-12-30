@@ -11,7 +11,7 @@ console.log("program ends")*/
 /*suppose we have a error in loading of script then we can handle it*/
 
 let name ="bootstrap"
-const loadscript=(src,callback,name)=>{
+const loadscript=(src,callback)=>{
     let spt=document.createElement('script');
     spt.src=src
     spt.onload=function(){
