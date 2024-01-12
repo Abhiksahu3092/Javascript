@@ -32,7 +32,7 @@ const loadscript=(src)=>{
 
 
 
-let pr=loadscript("https://cdnjsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js")
+let pr=loadscript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js")
 
 /* pr.then((value)=>{
     console.log(value)
